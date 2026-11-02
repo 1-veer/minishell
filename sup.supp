@@ -1,0 +1,13 @@
+#{
+#   parsing_leak
+#   Memcheck:Leak
+#   ...
+#   fun:parsing
+#}
+
+{
+  ignore_libreadline_leaks
+  Memcheck:Leak
+  ...
+  obj:*/libreadline.so.*
+}
